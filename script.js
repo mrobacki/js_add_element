@@ -6,19 +6,19 @@ const createBtn = (btnLabel) => {
     document.body.appendChild(btn);
 }
 
-i = 1;
+let number = 1;
 
 const addElement = () => {
     const block = document.createElement('div');
-    block.innerHTML = i;
+    block.innerHTML = number;
     block.classList.add('block');
     document.body.append(block);
-    if(i % 5 == 0) {
+    if(number % 5 == 0) {
         block.classList.add('circle');
     };
-    i++
+    number++;
 };
 
-createBtn('Click here');
+createBtn('Click on button');
 
 btn.addEventListener('click', addElement);
