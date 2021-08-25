@@ -1,6 +1,6 @@
 const btn = document.createElement('button');
 
-const createBtn = (btnLabel) => {
+const addButton = (btnLabel) => {
     btn.innerHTML = btnLabel;
     btn.classList.add('btn');
     document.body.appendChild(btn);
@@ -22,6 +22,6 @@ const addElement = () => {
     i++;
 };
 
-createBtn('Click on button');
+addButton('Click on button');
 
 btn.addEventListener('click', addElement);
