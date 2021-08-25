@@ -12,10 +12,10 @@ const addElement = () => {
     const block = document.createElement('div');
     block.innerHTML = number;
     block.classList.add('block');
-    document.body.append(block);
     if(number % 5 == 0) {
         block.classList.add('circle');
     };
+    document.body.append(block);
     number++;
 };
 
