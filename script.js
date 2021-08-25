@@ -1,5 +1,6 @@
 const button = document.createElement('button');
 button.innerHTML = 'klikaj';
+button.classList.add('btn');
 document.body.appendChild(button);
 button.style.display = 'block';
 
