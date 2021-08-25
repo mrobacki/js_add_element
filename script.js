@@ -6,17 +6,20 @@ const createBtn = (btnLabel) => {
     document.body.appendChild(btn);
 }
 
-let number = 1;
+let i;
 
 const addElement = () => {
+    if(!i) {
+        i = 1;
+    };
     const block = document.createElement('div');
-    block.innerHTML = number;
+    block.innerHTML = i;
     block.classList.add('block');
-    if(number % 5 == 0) {
+    if(i % 5 == 0) {
         block.classList.add('circle');
     };
     document.body.append(block);
-    number++;
+    i++;
 };
 
 createBtn('Click on button');
