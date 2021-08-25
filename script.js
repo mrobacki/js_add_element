@@ -1,3 +1,4 @@
+let i;
 const btn = document.createElement('button');
 
 const addButton = (btnLabel) => {
@@ -5,8 +6,6 @@ const addButton = (btnLabel) => {
     btn.classList.add('btn');
     document.body.appendChild(btn);
 }
-
-let i;
 
 const addElement = () => {
     if(!i) {
